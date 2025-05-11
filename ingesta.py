@@ -2,7 +2,7 @@ import boto3
 
 ficheroUpload = "usuarios.csv"
 ficheroUpload2 = "direccion.csv"
-nombreBucket = "prdocutos-cloud-pp"
+nombreBucket = "usuarios-cloud-pp"
 
 s3 = boto3.client('s3')
 response = s3.upload_file(ficheroUpload, nombreBucket, "usuarios/usuarios.csv")
